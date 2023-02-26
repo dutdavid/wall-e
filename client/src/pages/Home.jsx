@@ -5,6 +5,8 @@ import { Loader, Card, FormField } from '../components'
 const Home = () => {
   const [loading, setLoading] = useState(false);
   const [allPosts, setAllPosts] = useState(null);
+  const [searchText, setSearchText] = useState('abc');
+
   return (
     <section className="max-w-7xl mx-auto">
       <div>
@@ -24,7 +26,14 @@ const Home = () => {
 
         </div>
       ) : (
-        <></>
+        <>
+        {searchText && (
+          <h2 className="font-medium text-[#66e75] text-xl mb-3">
+            Showing results for <span className="text-[#222329]">{searchText}</span>
+          </h2>
+        )}
+
+        </>
       )}
 
     </div>

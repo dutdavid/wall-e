@@ -41,6 +41,17 @@ const Home = () => {
           </h2>
         )}
         <div className="grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 gap-3">
+          {searchText ? (
+            <RenderCards
+             data={[]}
+             title="No search results found"
+             />
+          ) : (
+            <RenderCards
+            data={[]}
+            title="No posts found"
+            />
+          )}
         </div>
         </>
       )}

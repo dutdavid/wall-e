@@ -28,7 +28,7 @@ const CreatePost = () => {
   }
 
   const handleSurpriseMe = () => {
-    const getRandomPrompt = getRandomPrompt();
+    const getRandomPrompt = getRandomPrompt(form.prompt);
   }
 
   return (

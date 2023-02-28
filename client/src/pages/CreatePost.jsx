@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import { preview } from '../assets';
-import { getRandomPrompt } from '../utils';
+import { getRandomPrompt, getRandomPrompt } from '../utils';
 import { FormField, Loader } from '../components';
 
 //check this first tomorrow
@@ -24,11 +24,11 @@ const CreatePost = () => {
 
   }
   const handleChange = (e) => {
-    setForm({ ..form, [e.target.name]: e.target.value })
+    setForm({ ...form, [e.target.name]: e.target.value })
   }
 
   const handleSurpriseMe = () => {
-
+    const getRandomPrompt = getRandomPrompt();
   }
 
   return (

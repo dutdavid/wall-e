@@ -94,7 +94,7 @@ const CreatePost = () => {
       <button 
       type="submit"
       >
-        {loading ? 'Loading..' : 'share'}
+        {loading ? 'Sharing..' : 'share with the community'}
       </button>
       </div>
       </form>

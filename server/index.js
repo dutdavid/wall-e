@@ -15,3 +15,5 @@ app.use('/', async (req, res) => {
 const startServer = async () => {
     app.listen(8080, () => console.log('Server has started on port http://localhost:8080'))
 }
+
+startServer();

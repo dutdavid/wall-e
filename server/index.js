@@ -11,3 +11,7 @@ app.use(express.json({ limit: '50mb' }));
 app.use('/', async (req, res) => {
     res.send('Hello world');
 })
+
+const startServer = async () => {
+    app.listen(8080, () => console.log('Server has started on port http://localhost:8080'))
+}

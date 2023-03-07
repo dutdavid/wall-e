@@ -7,3 +7,5 @@ const Post = new mongoose.Schema({
 });
 
 const PostSChema = mongoose.model('Post', Post);
+
+export default PostSChema;

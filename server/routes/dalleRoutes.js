@@ -7,12 +7,14 @@ dotenv.config();
 
 const router = express.Router();
 
-const Configuration = new Configuration({
-    apiKey: process.env.OpenAI_API_KEY,
+const configuration = new Configuration({
+    apiKey: process.env.OPENAI_API_KEY,
 })
 
-const openai = new OpenAIApi(Configuration);
+const openai = new OpenAIApi(configuration);
 
 router.route('/').get((req, res) => {
     res.send('Hello from Wall-e');
 })
+
+export default router;

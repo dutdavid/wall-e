@@ -22,7 +22,10 @@ router.route('/').post( async (req, res) => {
         n: 1,
         size: '1024x1024',
         response_format: 'b64_json',
-    })
+    });
+
+    const image = aiResponse.data.data[0].image;
+
    } catch (error) {
 
    }

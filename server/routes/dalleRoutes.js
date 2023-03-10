@@ -10,3 +10,5 @@ const router = express.Router();
 const Configuration = new Configuration({
     apiKey: process.env.OpenAI_API_KEY,
 })
+
+const openai = new OpenAIApi(Configuration);

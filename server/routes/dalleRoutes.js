@@ -12,3 +12,7 @@ const Configuration = new Configuration({
 })
 
 const openai = new OpenAIApi(Configuration);
+
+router.route('/').get((req, res) => {
+    res.send('Hello from Wall-e');
+})

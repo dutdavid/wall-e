@@ -20,9 +20,9 @@ const CreatePost = () => {
   const generateImage = () => {
     if(form.prompt) {
       try {
-
+        setGeneratingImg(true);
       } catch (error) {
-        
+
       }
     }
   }

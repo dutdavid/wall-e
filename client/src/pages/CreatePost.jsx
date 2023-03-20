@@ -25,7 +25,8 @@ const CreatePost = () => {
           method: 'POST',
           headers: {
             'Content-type': 'application/json',
-          }
+          },
+          body JSON.stringify({ prompt: form.prompt }),
         })
       } catch (error) {
 

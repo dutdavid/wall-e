@@ -18,7 +18,13 @@ const CreatePost = () => {
 
 
   const generateImage = () => {
+    if(form.prompt) {
+      try {
 
+      } catch (error) {
+        
+      }
+    }
   }
   const handleSubmit = () => {
 

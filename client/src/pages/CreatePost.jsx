@@ -8,12 +8,13 @@ import { FormField, Loader } from '../components';
 //check this first tomorrow
 const CreatePost = () => {
   const navigate = useNavigate();
+
   const [form, setForm] = useState({
     name: '',
     prompt: '',
     photo: '',
   });
-
+  
   const [generatingImg, setGeneratingImg] = useState(false);
   const [loading, setLoading] = useState(false);
 

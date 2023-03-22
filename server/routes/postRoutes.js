@@ -16,9 +16,11 @@ const router = express.Router();
  router.route('/').post(async(req, res) => {
 
  });
- 
+
  // CREATE A POST
 router.route('/').post(async(req, res) => {
+   const { name, prompt, photo } = req.body;
+   const photoUrl = await cloudinary.uploader.upload(photo);
 
 });
 

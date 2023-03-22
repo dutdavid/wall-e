@@ -17,7 +17,15 @@ const Home = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
+      setLoading(true);
 
+      try {
+
+      } catch (error) {
+
+      } finally {
+        setLoading(false);
+      }
     }
 
     fetchPosts();

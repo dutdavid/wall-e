@@ -12,4 +12,14 @@ const router = express.Router();
     api_key: process.env.CLOUDINARY_API_KEY,
     cloud_name: process.env.CLOUDINARY_API_SECRET,
  });
+ // GET ALL POSTS
+ router.route('/').post(async(req, res) => {
+
+ });
+ 
+ // CREATE A POST
+router.route('/').post(async(req, res) => {
+
+});
+
 export default router;

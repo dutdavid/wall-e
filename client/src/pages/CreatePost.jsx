@@ -57,9 +57,16 @@ const CreatePost = () => {
           },
           body: JSON.stringify(form)
         })
+        
+        await response.json();
+        navigate('/');
       } catch (err) {
-
+        alert(err)
+      } finally {
+        setLoading(false);
       }
+    } else {
+      alert('Please enter a prompt and generate an image')
     }
   }
   const handleChange = (e) => {

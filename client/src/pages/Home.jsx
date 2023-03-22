@@ -1,4 +1,4 @@
-import React, { useState, useffect } from 'react'
+import React, { useState, useffect, useEffect } from 'react'
 import { Loader, Card, FormField } from '../components'
 
 const RenderCards = ({ data, title }) => {
@@ -14,6 +14,14 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [allPosts, setAllPosts] = useState(null);
   const [searchText, setSearchText] = useState('');
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+
+    }
+
+    fetchPosts();
+  }, []);
 
   return (
     <section className="max-w-7xl mx-auto">

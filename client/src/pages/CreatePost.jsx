@@ -44,8 +44,17 @@ const CreatePost = () => {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
+    if(form.prompt && form.photo) {
+      setLoading(true);
+      try {
+
+      } catch (err) {
+        
+      }
+    }
   }
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value })

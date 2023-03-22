@@ -26,6 +26,10 @@ const Home = () => {
             'Content-Type': 'application/json',
           },
         })
+
+        if(response.ok) {
+          const result = await response.json();
+        }
       } catch (error) {
 
       } finally {

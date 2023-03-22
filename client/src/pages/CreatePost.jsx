@@ -22,7 +22,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('http://localhost/api/v1/dalle', {
+        const response = await fetch('https://localhost:8080/api/v1/dalle', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
